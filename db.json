@@ -1,0 +1,83 @@
+{
+    "Movement": [
+        {
+            "id": "MV-001",
+            "accountId": [
+                {
+                    "id": "ACC-001",
+                    "name": "Conto 1",
+                    "type": "BUSINESS",
+                    "balance": 1234,
+                    "iban": "IT68D0300203280000400162854",
+                    "lastUpate": "2026-10-19",
+                    "openingDate": "2026-10-19"
+                }
+            ],
+            "date": "2026-10-19",
+            "description": "Stipendio Magico",
+            "amount": 2500,
+            "type": "CREDIT",
+            "category": "Altro"
+        },
+        {
+            "id": "MV-002",
+            "accountId": [
+                {
+                    "id": "ACC-002",
+                    "name": "Conto 2",
+                    "type": "BUSINESS",
+                    "balance": 1234,
+                    "iban": "IT68D0300203280000123162854",
+                    "lastUpate": "2026-10-15",
+                    "openingDate": "2026-10-15"
+                }
+            ],
+            "date": "2026-10-19",
+            "description": "Stipendio Unico",
+            "amount": 2500,
+            "type": "CREDIT",
+            "category": "Altro"
+        },
+        {
+            "id": "MV-003",
+            "accountId": [
+                {
+                    "id": "ACC-002",
+                    "name": "Conto 3",
+                    "type": "PRIVATE",
+                    "balance": 1234,
+                    "iban": "IT68D0300203280000123162854",
+                    "lastUpate": "2026-10-15",
+                    "openingDate": "2026-10-15"
+                }
+            ],
+            "date": "2026-10-19",
+            "description": "Pago Spessa",
+            "amount": 2500,
+            "type": "DEBIT",
+            "category": "Altro"
+        }
+    ],
+    "Account": [
+        {
+            "id": "ACC-001",
+            "name": "Conto 1",
+            "type": "BUSINESS",
+            "balance": 1234,
+            "iban": "IT68D0300203280000400162854",
+            "lastUpate": "2026-10-19",
+            "openingDate": "2026-10-19",
+            "movement_ids":["MV-001"]
+        },
+        {
+            "id": "ACC-002",
+            "name": "Conto 2",
+            "type": "BUSINESS",
+            "balance": 1234,
+            "iban": "IT68D0300203280000123162854",
+            "lastUpate": "2026-10-15",
+            "openingDate": "2026-10-15",
+            "movement_ids":["MV-002","MV-003"]
+        }
+    ]
+}
